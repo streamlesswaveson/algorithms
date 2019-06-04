@@ -1,0 +1,16 @@
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.18.8'
+    testCompile 'org.junit.jupiter:junit-jupiter:5.4.2'
+    // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+
+}

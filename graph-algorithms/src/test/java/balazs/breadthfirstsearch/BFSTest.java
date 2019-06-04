@@ -1,8 +1,19 @@
 package balazs.breadthfirstsearch;
 
-public class App {
+import static org.hamcrest.MatcherAssert.assertThat;
 
-    public static void main(String ...args) {
+import static org.hamcrest.Matchers.*;
+import org.junit.jupiter.api.Test;
+
+public class BFSTest {
+
+    @Test
+    public void testit() {
+        assertThat(true, is(true));
+    }
+
+    @Test
+    public void testBfs() {
         BFS bfs = new BFS();
 
         Vertex v1 = new Vertex(1);
@@ -20,5 +31,4 @@ public class App {
 
         bfs.bfs(v1);
     }
-
 }
